@@ -1,0 +1,36 @@
+@import 'vars';
+@import 'navigation';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 53px 0px 57px;
+}
+
+
+.logo {
+    display: flex;
+    gap: 10px;
+    &__text {
+    @include title_fonts;
+    font-size: 40px;
+    }
+}
+
+
+

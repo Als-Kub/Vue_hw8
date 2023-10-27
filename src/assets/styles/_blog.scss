@@ -1,0 +1,126 @@
+@import 'pagination';
+@import 'banner';
+@import 'card';
+
+.center-wide {
+    padding-left: calc(50% - 750px);
+    padding-right: calc(50% - 750px);
+}
+
+
+.post {
+    margin-bottom: 96px;
+
+    &__title {
+        @include title_fonts;
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    &__subtitle {
+        @include title_fonts;
+        font-size: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+        letter-spacing: 0.22px;
+        margin-bottom: 55px;
+    }
+
+
+    &__text_mb {
+        margin-bottom: 41px;
+    }
+
+    &__date-text {
+        @include text_fonts;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+    }
+
+    &__content {
+        display: flex;
+        padding: 21px;
+        border-radius: 62px;
+        border: 1px solid $border_clr;
+        gap: 65px;
+        align-items: center;
+    }
+
+    &__date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img-box {
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+}
+
+.button-round {
+    border-radius: 50%;
+    border-color: transparent;   
+}
+
+.blog {
+    margin-bottom: 200px;
+    
+    &__cards {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 28px;
+        row-gap: 30px;
+        margin-bottom: 51px;
+    }
+
+    &__card-desc {        
+        position:absolute;
+        top: 248px;
+        left: 41px;
+        @include text_fonts;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        padding: 8px 11px;
+        background-color: $btn_clr;
+        border-radius: 8px 8px 8px 0px;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+
+    &__title_align-left {
+        text-align: left;
+    }
+
+    &__text {
+
+        @include text_fonts;
+        font-size: 22px;
+        margin-bottom: 93px;
+        padding: 0 17%;
+        text-align: center;
+    }
+
+    &__card-box {
+        position: relative;
+        padding: 21px;
+        border: 1px solid $border_clr;
+        border-radius: 62px;
+    }
+}
+
+

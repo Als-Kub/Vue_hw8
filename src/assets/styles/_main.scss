@@ -1,0 +1,222 @@
+@import 'vars';
+@import 'header';
+@import 'footer';
+
+.top {
+    &__box {
+
+        background-image: url(../img/Main/top_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 208px 0px 208px 52px;
+        overflow: hidden;
+        margin-bottom: 96px;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 65px;
+        max-width: 434px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+        max-width: 434px;
+        margin-bottom: 21px;
+    }
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 48px;
+    background-color: $title_clr;
+    border-radius: 18px;
+
+    &__text {
+        @include text_fonts;
+        color:$btn_clr;
+        font-size: 18px;
+        line-height: 125%; /* 22.5px */
+        letter-spacing: 0.36px;
+        text-decoration: none;
+    }    
+}
+
+.projects {
+    margin-bottom: 96px;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 108px;
+        row-gap: 56px;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    &__text {
+
+        @include text_fonts;
+        font-size: 22px;
+        margin-bottom: 93px;
+        padding: 0 17%;
+        text-align: center;
+    }
+}
+
+.card {
+    position:relative;
+
+    &__img-box {
+        margin-bottom: 24px;
+        overflow: hidden;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        border-top-right-radius: 80px;
+    }
+    &__title {
+        @include title_fonts;
+        font-size: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+    }
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+    }
+    &__img-box_radius-tr {
+        border-top-right-radius: 80px;
+    } 
+    &__img-box_radius-tl {
+        border-top-left-radius: 80px;
+    } 
+    &__img-box_radius-br {
+        border-bottom-right-radius: 80px;
+    } 
+    &__img-box_radius-bl {
+        border-bottom-left-radius: 80px;
+    } 
+
+    &__img-box-radius_double {
+        border-top-right-radius: 45px;
+        border-top-left-radius: 45px;
+    }
+    &__title_margin {
+        margin: 21px 0 30px;
+    }
+    &__title_font-size {
+        font-size: 25px; 
+    }
+
+    &_desc_1::after {
+        @include card_desc;
+        content: 'Kitchan Design';  
+    }
+
+    &_desc_2::after {
+        @include card_desc;
+        content: 'Living Design'; 
+    }
+
+    &_desc_3::after {
+        @include card_desc;
+        content: 'Interior Design';  
+    }
+}
+
+.button-round {
+    border-radius: 50%;
+    border-color: transparent;   
+}
+
+.results {
+
+    &__box {
+        display: flex;
+        padding: 151px 0;
+        margin-bottom: 96px;
+        background-color: $results_bgc;
+    }
+
+    &__content {
+        flex-basis: 300px;
+        border-left: 1px solid $numbers_clr;
+        border-right: 1px solid $numbers_clr;
+    }
+
+    &__digit {
+        @include title_fonts;
+        font-size: 85px;
+        letter-spacing: 1.7px;
+        color: $numbers_clr;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+        letter-spacing: 1.7px;
+        text-align: center;
+    }
+    &__content_border-left {
+        border-left: 1px solid transparent;
+    }
+    &__content_border-right {
+        border-right: 1px solid transparent;
+    }
+
+}
+
+.blog {
+    margin-bottom: 96px;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 27px;
+
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    &__text {
+
+        @include text_fonts;
+        font-size: 22px;
+        margin-bottom: 93px;
+        padding: 0 17%;
+        text-align: center;
+    }
+
+    &__card-box {
+        padding: 21px;
+        border: 1px solid $border_clr;
+        border-radius: 62px;
+    }
+}
+
+

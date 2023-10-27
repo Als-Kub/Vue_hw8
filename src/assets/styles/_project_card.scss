@@ -1,0 +1,29 @@
+.card {
+    &__img-box {
+        position: relative;
+        }
+    
+    &__svg path {
+        fill: none;
+    }
+
+    &__svg_active path {
+        fill: $star_clr;
+    }
+
+    &__img-box:hover {
+        filter: brightness(85%);
+
+        .card__svg path {
+            stroke: $star_clr;
+        }
+    }
+
+    &__svg {
+        position: absolute;
+        top:0;
+        right: 0;
+            
+    }
+    
+}

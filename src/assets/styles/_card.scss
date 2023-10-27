@@ -1,0 +1,51 @@
+.card {
+
+    &__img-box {
+        margin-bottom: 24px;
+
+        overflow: hidden;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img {
+        border-top-right-radius: 80px;
+    }
+    &__title {
+        @include title_fonts;
+        font-size: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+     }
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+    }
+    &__img-box_radius-tr {
+        border-top-right-radius: 80px;
+    } 
+    &__img-box_radius-tl {
+        border-top-left-radius: 80px;
+    } 
+    &__img-box_radius-br {
+        border-bottom-right-radius: 80px;
+    } 
+    &__img-box_radius-bl {
+        border-bottom-left-radius: 80px;
+    } 
+
+    &__img-box-radius_double {
+        border-top-right-radius: 45px;
+        border-top-left-radius: 45px;
+    }
+    &__title_margin {
+        margin: 21px 0 30px;
+    }
+    &__title_font-size {
+        font-size: 25px; 
+    }
+}

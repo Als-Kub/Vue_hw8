@@ -1,0 +1,156 @@
+.top-blog-details {
+        min-height: 356px;
+        margin-bottom: 200px;
+
+        &__img-box {
+            overflow: hidden;
+        }
+
+}
+
+.article {
+    display: flex;
+    gap: 52px;
+    margin-bottom: 96px;
+
+    &__wrapper {
+        flex-basis: 545px;
+    }
+        &__title {
+        @include title_fonts;
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 21px;
+    }
+
+    &__img-box {
+        width: 800px;
+        height: 540px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-bottom: 46px;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__date-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__date-text, &__date {
+        @include text_fonts;
+        font-size: 16px;
+        margin-bottom: 48px;
+        letter-spacing: 0.16px;
+    }
+
+    &__date-text {
+        padding-right: 60px;
+    }
+
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    &__title_mb {
+        margin-bottom: 20px;
+    }
+
+    &__li {
+        display: flex;
+        gap: 14px;
+        list-style-type: none;
+        margin-bottom: 44px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__text_mb {
+        margin-bottom: 0;
+    }
+
+    &__text-number {
+        @include title_fonts;
+        font-size: 20px;
+        letter-spacing: 0.4px;
+        color: $numbers_clr;
+    }
+
+}
+
+.quote {
+    background-color: $results_bgc;
+    border-radius: 50px;
+    padding-bottom: 53px;
+    margin-bottom: 27px;
+
+    &__symbol {
+        @include title_fonts;
+        font-size: 200px;
+        font-style: italic;
+        letter-spacing: 4px;
+        color: $numbers_clr;
+        text-align: center;
+        margin-bottom: -36px;
+        transform: rotate(180deg);
+        padding-right: 40px;
+    }
+
+    &__text {
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        color: $numbers_clr;
+        text-align: center;
+    }
+}
+
+
+
+.tags {
+flex-basis: 545px;
+    &__title {
+        @include title_fonts;
+        font-size: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 24px;
+    }
+    
+    &__buttons-box {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-auto-flow: dense;
+        column-gap: 10px;
+        row-gap: 11px;
+        padding-right: 10px;
+    }
+
+
+    &__button {
+        @include text_fonts;
+        font-size: 18px;
+        line-height: 125%; /* 22.5px */
+        letter-spacing: 0.36px;
+        padding: 9px 39px;
+        color: $title_clr;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: $results_bgc;
+
+    }
+
+    &__active {
+        color: $results_bgc;
+        background-color:  $title_clr;
+    }
+}

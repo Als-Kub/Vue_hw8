@@ -1,0 +1,55 @@
+.banner {
+    &__box {
+        min-height: 356px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: url(../img/Blog/top_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        margin-bottom: 200px;
+    }
+
+    &__content {
+        max-width: 503px;
+        background-color: $btn_clr;
+        padding: 41px 78px;
+        border-radius: 37px 37px 0 0;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    &__links {
+        text-align: center;
+    }
+
+    &__link {
+        @include text_fonts;
+        font-size: 22px;
+        text-decoration: none;
+        &:not(:last-child)::after {
+            content: ' /';
+                }
+
+    }
+
+}
+.banner_blog {
+    background-image: url(../img/Blog/top_img.jpg);
+}
+.banner_blog_details {
+    background-image: url(../img/Blog_details/Blog_details_top.jpg);
+}
+.banner_project {
+    background-image: url(../img/Project/top_img.jpg);
+}
+
+.banner_project_details {
+    background-image: url(../img/Project_details/top_img.jpg);
+}

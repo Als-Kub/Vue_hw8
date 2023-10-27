@@ -1,0 +1,47 @@
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 134px;
+
+    &__left {
+        padding-right: 10px;
+    }
+
+    &__center {
+        padding-left: 101px;
+    }
+
+    &__right {
+        padding: 0 5px 0 140px;
+    }
+
+    &__text {
+        @include text_fonts;
+        font-size: 22px;
+        margin: 18px 0 31px;
+    }
+
+    &__link_margin {
+        margin-right: 54px;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 25px;
+    }
+
+    &__nav_flex {
+        list-style-type: none;
+        flex-direction: column;
+        gap: 0px;
+    }
+        &__nav__link_font {
+            font-size: 22px;
+            line-height: 300%; /* 66px */
+    }
+
+        &__text_lign-height {
+            line-height: 300%;
+    }
+}

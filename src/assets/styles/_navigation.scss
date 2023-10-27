@@ -1,0 +1,16 @@
+.nav {
+
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    
+
+&__link {
+    @include text_fonts;
+    font-size: 20px;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+}

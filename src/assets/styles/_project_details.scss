@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    &__heading {
+        @include title_fonts;
+        font-size: 50px;
+        letter-spacing: 1px;
+        margin-bottom: 11px;
+        max-width: 658px;
+    }
+
+    &__text1, &__text2 {
+        @include text_fonts;
+        font-size: 22px;
+        margin-bottom: 25px;
+        letter-spacing: 0.22px;
+        max-width: 658px;
+    }
+
+    &__text2 {
+        margin-bottom: 0;
+    }
+}

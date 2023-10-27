@@ -1,0 +1,122 @@
+@import 'project_card';
+
+.center-wide {
+    padding-left: calc(50% - 750px);
+    padding-right: calc(50% - 750px);
+}
+
+
+.top-project {
+    &__box {
+        min-height: 356px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: url(../img/Blog/top_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        margin-bottom: 200px;
+
+    }
+
+    &__content {
+        max-width: 503px;
+        background-color: $btn_clr;
+        padding: 41px 78px;
+        border-radius: 37px 37px 0 0;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    &__links {
+        text-align: center;
+    }
+
+    &__link {
+        @include text_fonts;
+        font-size: 22px;
+        text-decoration: none;
+        &:not(:last-child)::after {
+            content: ' /';
+                }
+
+    }
+
+}
+
+
+.category {
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 61px;
+
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 855px;
+        border: solid 1px $numbers_clr;
+        border-radius: 18px;
+    }
+
+    &__button {
+        @include text_fonts;
+        color: $title_clr;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 125%; /* 22.5px */
+        letter-spacing: 0.36px;
+        padding: 26px 66px;
+        background: $btn_clr;
+        border-radius: 18px;
+        border: solid 1px transparent;
+
+        &:hover {
+            border: solid 1px $numbers_clr;
+        }
+
+        &_active {
+            color: $btn_clr;
+            background: $numbers_clr;
+
+        }
+    }
+}
+
+.project {
+    margin-bottom: 200px;
+
+    &__cards {
+        display: flex;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        @include text_fonts;
+        font-size: 16px;
+        font-weight: 500;
+        color: $title_clr;
+        border: 1px solid $numbers_clr;
+        border-radius: 52px;
+    }
+}

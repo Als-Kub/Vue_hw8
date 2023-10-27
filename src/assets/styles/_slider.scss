@@ -1,0 +1,39 @@
+.swiper {
+  width: auto;
+  height: auto;
+  margin-bottom: 120px;
+
+  --swiper-navigation-size: 60px;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: $title_clr;
+}
+.swiper-zoom-container {
+  height: 800px;
+
+
+}
+.swiper-zoom-container > img {
+  border: solid 1px transparent;
+  border-radius: 70px;
+  cursor: zoom-in;
+
+}
+
+.swiper-pagination-bullet { 
+  width: 20px;
+  height: 20px;
+  border: solid 1px $title_clr;
+  background-color: $btn_clr;
+  border-radius: 50%;
+}
+
+.swiper-pagination {
+padding-top: 15px;
+  position: static;
+}

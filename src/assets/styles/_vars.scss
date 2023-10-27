@@ -1,0 +1,38 @@
+$title_clr: #292F36;
+$title_font-fam: 'DM Serif Display', serif;
+$text_clr: #4D5053;
+$text_font-fam: 'Jost', sans-serif;
+$btn_clr: #fff;
+$numbers_clr: #CDA274;
+$results_bgc: #F4F0EC;
+$border_clr: #E7E7E7;
+$star_clr:#FFA928;
+
+@mixin title_fonts {
+    color: $title_clr;
+    font-family: $title_font-fam;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 31.25px */
+}
+
+@mixin text_fonts {
+    color: $text_clr;
+    font-family: $text_font-fam;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+}
+
+@mixin card_desc {
+    position:absolute;
+    top: 228px;
+    left: 20px;
+    @include text_fonts;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    padding: 8px 11px;
+    background-color: $btn_clr;
+    border-radius: 8px 8px 8px 0px;
+}

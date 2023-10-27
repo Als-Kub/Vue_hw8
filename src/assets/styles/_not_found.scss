@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    gap: 81px;
+    align-items: center;
+    
+    &__content {
+    flex-basis: 570px;
+    }
+
+    &__title {
+        @include title_fonts;
+        font-size: 250px;
+        color: $numbers_clr;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        @include title_fonts;
+        font-size: 35px;
+        line-height: 150%; /* 52.5px */
+        letter-spacing: 0.35px;
+        margin-bottom: 23px;
+      
+    }
+
+    &__image {
+        border: solid 1px transparent;
+        border-radius: 0px 0px 0px 353px;
+        overflow: hidden;
+    }
+}
+
+.padding {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 960px);
+}
